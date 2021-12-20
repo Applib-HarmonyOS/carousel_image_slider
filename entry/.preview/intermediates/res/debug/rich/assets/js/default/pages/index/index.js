@@ -86,150 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "../../../../../git/carousel_image_slider/ds_carousel_slider/lib/ds_comp/ds_comp.js":
-/*!******************************************************************************!*\
-  !*** E:/git/carousel_image_slider/ds_carousel_slider/lib/ds_comp/ds_comp.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _ohos = _interopRequireDefault(requireModule("@ohos.document"));
-
-var _system = _interopRequireDefault(requireModule("@system.app"));
-
-var _default = {
-  data: {
-    title1: "C A R O U S E L",
-    title2: "S L I D E R",
-    //        Image1: '/common/images/lr.jpg',
-    //        Image2: '/common/images/i1.jpg',
-    //        Image3: '/common/images/bg-tv.jpg',
-    //        Image4: '/common/images/rr.jpg',
-    //        Image5:'/common/images/mustang.jpg',
-    sync_img: '',
-    num: 1,
-    red_dot: '../ds_img/red_dot.png',
-    black_dot: '../ds_img/black_dot.png',
-    dot1: '../ds_img/red_dot.png',
-    dot2: '../ds_img/black_dot.png',
-    dot3: '../ds_img/black_dot.png',
-    dot4: '../ds_img/black_dot.png',
-    dot5: '../ds_img/black_dot.png'
-  },
-  nxtimgr: function nxtimgr() {
-    console.log("yeh");
-    console.log("hi" + this.dot1);
-
-    if (this.num == 1) {
-      this.sync_img = this.Image1;
-      this.Image1 = this.Image2;
-      this.num += 1;
-      this.dot1 = this.black_dot;
-      this.dot2 = this.red_dot;
-    } else if (this.num == 2) {
-      this.Image1 = this.Image3;
-      this.num += 1;
-      this.dot2 = this.black_dot;
-      this.dot3 = this.red_dot;
-    } else if (this.num == 3) {
-      this.Image1 = this.Image4;
-      this.num += 1;
-      this.dot3 = this.black_dot;
-      this.dot4 = this.red_dot;
-    } else if (this.num == 4) {
-      this.Image1 = this.Image5;
-      this.num += 1;
-      this.dot4 = this.black_dot;
-      this.dot5 = this.red_dot;
-    } else if (this.num == 5) {
-      this.Image1 = this.sync_img;
-      this.num = 1;
-      this.dot5 = this.black_dot;
-      this.dot1 = this.red_dot;
-    }
-  },
-  nxtimgl: function nxtimgl() {
-    if (this.num == 1) {
-      this.sync_img = this.Image1;
-      this.Image1 = this.Image5;
-      this.num = 5;
-      this.dot1 = this.black_dot;
-      this.dot5 = this.red_dot;
-    } else if (this.num == 2) {
-      this.Image1 = this.sync_img;
-      this.num -= 1;
-      this.dot2 = this.black_dot;
-      this.dot1 = this.red_dot;
-    } else if (this.num == 3) {
-      this.Image1 = this.Image2;
-      this.num -= 1;
-      this.dot3 = this.black_dot;
-      this.dot2 = this.red_dot;
-    } else if (this.num == 4) {
-      this.Image1 = this.Image3;
-      this.num -= 1;
-      this.dot4 = this.black_dot;
-      this.dot3 = this.red_dot;
-    } else if (this.num == 5) {
-      this.Image1 = this.Image4;
-      this.num -= 1;
-      this.dot5 = this.black_dot;
-      this.dot4 = this.red_dot;
-    }
-  }
-};
-exports["default"] = _default;
-
-function requireModule(moduleName) {
-  const systemList = ['system.router', 'system.app', 'system.prompt', 'system.configuration',
-  'system.image', 'system.device', 'system.mediaquery', 'ohos.animator', 'system.grid', 'system.resource']
-  var target = ''
-  if (systemList.includes(moduleName.replace('@', ''))) {
-    target = $app_require$('@app-module/' + moduleName.substring(1));
-    return target;
-  }
-  var shortName = moduleName.replace(/@[^.]+.([^.]+)/, '$1');
-  if (typeof ohosplugin !== 'undefined' && /@ohos/.test(moduleName)) {
-    target = ohosplugin;
-    for (let key of shortName.split('.')) {
-      target = target[key];
-      if(!target) {
-        break;
-      }
-    }
-    if (typeof target !== 'undefined') {
-      return target;
-    }
-  }
-  if (typeof systemplugin !== 'undefined') {
-    target = systemplugin;
-    for (let key of shortName.split('.')) {
-      target = target[key];
-      if(!target) {
-        break;
-      }
-    }
-    if (typeof target !== 'undefined') {
-      return target;
-    }
-  }
-  target = requireNapi(shortName);
-  return target;
-}
-
-
-/***/ }),
-
 /***/ "../../../../../git/carousel_image_slider/entry/src/main/js/default/pages/index/index.hml?entry":
 /*!******************************************************************************************!*\
   !*** E:/git/carousel_image_slider/entry/src/main/js/default/pages/index/index.hml?entry ***!
@@ -433,7 +289,7 @@ module.exports = {
           "attr": {
             "debugLine": "E:git/carousel_image_slider/ds_carousel_slider/lib/ds_comp/ds_comp:4",
             "className": "img",
-            "src": function () {return this.displayimg}
+            "src": function () {return this.image1}
           },
           "type": "image",
           "classList": [
@@ -559,7 +415,28 @@ module.exports = {
     },
     {
       "attr": {
-        "debugLine": "pages/index/index:6"
+        "debugLine": "pages/index/index:5",
+        "className": "title2",
+        "value": function () {return this.title2}
+      },
+      "type": "text",
+      "classList": [
+        "title2"
+      ]
+    },
+    {
+      "attr": {
+        "debugLine": "pages/index/index:6",
+        "image1": "https://raw.githubusercontent.com/applibgroup/carousel_image_slider/main/entry/src/main/js/default/common/images/ls01.jpg",
+        "image2": "https://raw.githubusercontent.com/applibgroup/carousel_image_slider/main/entry/src/main/js/default/common/images/ls02.jpg",
+        "image3": "https://raw.githubusercontent.com/applibgroup/carousel_image_slider/main/entry/src/main/js/default/common/images/ls03.jpg",
+        "image4": "https://raw.githubusercontent.com/applibgroup/carousel_image_slider/main/entry/src/main/js/default/common/images/ls04.jpg",
+        "image5": "https://raw.githubusercontent.com/applibgroup/carousel_image_slider/main/entry/src/main/js/default/common/images/ls05.jpg",
+        "dot1": "https://raw.githubusercontent.com/applibgroup/carousel_image_slider/main/ds_carousel_slider/lib/ds_img/red_dot.png",
+        "dot2": "https://raw.githubusercontent.com/applibgroup/carousel_image_slider/main/ds_carousel_slider/lib/ds_img/black_dot.png",
+        "dot3": "https://raw.githubusercontent.com/applibgroup/carousel_image_slider/main/ds_carousel_slider/lib/ds_img/black_dot.png",
+        "dot4": "https://raw.githubusercontent.com/applibgroup/carousel_image_slider/main/ds_carousel_slider/lib/ds_img/black_dot.png",
+        "dot5": "https://raw.githubusercontent.com/applibgroup/carousel_image_slider/main/ds_carousel_slider/lib/ds_img/black_dot.png"
       },
       "type": "ds_corousel"
     }
@@ -613,81 +490,81 @@ exports["default"] = void 0;
 
 var _ohos = _interopRequireDefault(requireModule("@ohos.document"));
 
-var _system = _interopRequireDefault(requireModule("@system.app"));
-
 var _default = {
   data: {
     title1: "C A R O U S E L",
     title2: "S L I D E R",
     sync_img: '',
-    num: 1,
-    red_dot: '../ds_img/red_dot.png',
-    black_dot: '../ds_img/black_dot.png',
-    dot1: '../ds_img/red_dot.png',
-    dot2: '../ds_img/black_dot.png',
-    dot3: '../ds_img/black_dot.png',
-    dot4: '../ds_img/black_dot.png',
-    dot5: '../ds_img/black_dot.png'
+    num: 1
+  },
+  props: {
+    image1: '',
+    image2: '',
+    image3: '',
+    image4: '',
+    image5: '',
+    dot1: '',
+    dot2: '',
+    dot3: '',
+    dot4: '',
+    dot5: ''
   },
   nxtimgr: function nxtimgr() {
-    console.log("yeh");
-    console.log("hi" + this.dot1);
-
     if (this.num == 1) {
-      this.sync_img = this.Image1;
-      this.Image1 = this.Image2;
+      this.sync_img = this.image1;
+      this.image1 = this.image2;
       this.num += 1;
-      this.dot1 = this.black_dot;
-      this.dot2 = this.red_dot;
+      this.dot2 = this.dot1;
+      this.dot1 = this.dot3;
     } else if (this.num == 2) {
-      this.Image1 = this.Image3;
+      this.image1 = this.image3;
       this.num += 1;
-      this.dot2 = this.black_dot;
-      this.dot3 = this.red_dot;
+      this.dot3 = this.dot2;
+      this.dot2 = this.dot4;
     } else if (this.num == 3) {
-      this.Image1 = this.Image4;
+      this.image1 = this.image4;
       this.num += 1;
-      this.dot3 = this.black_dot;
-      this.dot4 = this.red_dot;
+      this.dot4 = this.dot3;
+      this.dot3 = this.dot5;
     } else if (this.num == 4) {
-      this.Image1 = this.Image5;
+      this.image1 = this.image5;
       this.num += 1;
-      this.dot4 = this.black_dot;
-      this.dot5 = this.red_dot;
+      this.dot5 = this.dot4;
+      this.dot4 = this.dot1;
     } else if (this.num == 5) {
-      this.Image1 = this.sync_img;
+      this.image1 = this.sync_img;
       this.num = 1;
-      this.dot5 = this.black_dot;
-      this.dot1 = this.red_dot;
+      this.dot1 = this.dot5;
+      this.dot5 = this.dot2;
     }
   },
   nxtimgl: function nxtimgl() {
     if (this.num == 1) {
-      this.sync_img = this.Image1;
-      this.Image1 = this.Image5;
+      this.sync_img = this.image1;
+      this.image1 = this.image5;
       this.num = 5;
-      this.dot1 = this.black_dot;
-      this.dot5 = this.red_dot;
+      this.dot5 = this.dot1;
+      this.dot1 = this.dot2;
     } else if (this.num == 2) {
-      this.Image1 = this.sync_img;
+      this.image1 = this.sync_img;
       this.num -= 1;
-      this.dot2 = this.black_dot;
-      this.dot1 = this.red_dot;
+      this.dot1 = this.dot2;
+      this.dot2 = this.dot3;
     } else if (this.num == 3) {
-      this.Image1 = this.Image2;
+      this.image1 = this.image2;
       this.num -= 1;
-      this.dot3 = this.black_dot;
-      this.dot2 = this.red_dot;
+      this.dot2 = this.dot3;
+      this.dot3 = this.dot4;
     } else if (this.num == 4) {
-      this.Image1 = this.Image3;
+      this.image1 = this.image3;
       this.num -= 1;
-      this.dot4 = this.black_dot;
-      this.dot3 = this.red_dot;
+      this.dot3 = this.dot4;
+      this.dot4 = this.dot5;
     } else if (this.num == 5) {
-      this.Image1 = this.Image4;
+      this.image1 = this.image4;
       this.num -= 1;
-      this.dot5 = this.black_dot;
-      this.dot4 = this.red_dot;
+      this.dot4 = this.dot5;
+      this.dot5 = this.dot1;
     }
   }
 };
@@ -761,30 +638,18 @@ if (moduleOwn.data && accessors.some(function (acc) {
   !*** ./lib/script.js!./node_modules/babel-loader/lib?presets[]=E:/sdk/js/2.2.0.3/build-tools/ace-loader/node_modules/@babel/preset-env&plugins[]=E:/sdk/js/2.2.0.3/build-tools/ace-loader/node_modules/@babel/plugin-transform-modules-commonjs&comments=false!./lib/resource-reference-script.js!E:/git/carousel_image_slider/entry/src/main/js/default/pages/index/index.js ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
 module.exports = function(module, exports, $app_require$){"use strict";
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-
-var _ds_comp = _interopRequireDefault(__webpack_require__(/*! ../../../../../../node_modules/ds_carousel_slider/lib/ds_comp/ds_comp.js */ "../../../../../git/carousel_image_slider/ds_carousel_slider/lib/ds_comp/ds_comp.js"));
-
-var _system = _interopRequireDefault(requireModule("@system.app"));
-
 var _default = {
   data: {
     title1: "DS Libraries",
-    title2: "Corousel Slider",
-    Image1: '../../../../js/default/common/images/ls01.jpg',
-    Image2: '../../../../js/default/common/images/ls02.jpg',
-    Image3: '../../../../js/default/common/images/ls03.jpg',
-    Image4: '../../../../js/default/common/images/ls04.jpg',
-    Image5: '../../../../js/default/common/images/ls05.jpg'
+    title2: "Corousel Slider"
   },
   nxtimgr: function nxtimgr() {
     console.log("hello");

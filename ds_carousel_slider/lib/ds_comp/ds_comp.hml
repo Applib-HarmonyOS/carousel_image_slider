@@ -1,7 +1,7 @@
 <div class="container">
     <div class="divAli">
         <input type="button" class="btn5" onclick="nxtimgl()" value="<"/>
-        <image class="img" src="{{displayimg}}" ></image>
+        <image class="img" src="{{image1}}" ></image>
         <input type="button" class="btn5" onclick="nxtimgr()" value=">"/>
     </div>
     <div class="base" >

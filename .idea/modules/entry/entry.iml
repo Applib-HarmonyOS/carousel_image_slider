@@ -23,12 +23,12 @@
         <option name="OHOS_TEST_RESOURCES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../entry/src/ohosTest/resources;file://$MODULE_DIR$/../../../entry/src/debugOhosTest/resources" />
         <option name="MODULE_TYPE" value="entry" />
         <option name="DEBUGGABLE" value="true" />
-        <option name="HAP_OUTPUT_FOLDER_PATH" value="$MODULE_DIR$/../../../entry/build/outputs/hap/debug" />
+        <option name="HAP_OUTPUT_FOLDER_PATH" value="E:\git\carousel_image_slider\entry\build\outputs\hap\debug" />
         <option name="PREVIEW_EXECUTE_TASK_NAME" value="generateDebugJsManifest" />
-        <option name="JS_MANIFEST_PATH" value="$MODULE_DIR$/../../../entry/build/intermediates/js/debug/jsManifest" />
-        <option name="SUPERVISUAL_SOURCE_DIR_PATH" value="$MODULE_DIR$/../../../entry/src/main/supervisual" />
-        <option name="JS_SOURCE_DIR_PATH" value="$MODULE_DIR$/../../../entry/src/main/js" />
-        <option name="ETS_SOURCE_DIR_PATH" value="$MODULE_DIR$/../../../entry/src/main/ets" />
+        <option name="JS_MANIFEST_PATH" value="E:\git\carousel_image_slider\entry\build\intermediates\js\debug\jsManifest" />
+        <option name="SUPERVISUAL_SOURCE_DIR_PATH" value="E:\git\carousel_image_slider\entry\src\main\supervisual" />
+        <option name="JS_SOURCE_DIR_PATH" value="E:\git\carousel_image_slider\entry\src\main\js" />
+        <option name="ETS_SOURCE_DIR_PATH" value="E:\git\carousel_image_slider\entry\src\main\ets" />
         <option name="MERGE_JS_SRC" value="false" />
         <option name="COMPILE_MODE_TYPE" value="d8" />
       </configuration>
@@ -47,6 +47,9 @@
     <output-test url="file://$MODULE_DIR$/../../../entry/build/intermediates/javac/debugTest/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../entry">
+      <sourceFolder url="file://$MODULE_DIR$/../../../entry/build/generated/source/annotation/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../entry/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../entry/build/intermediates/original_res/debug" type="java-resource" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../entry/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../entry/src/main/js" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../entry/src/main/resources" type="java-resource" />
@@ -69,7 +72,7 @@
         <CLASSES />
         <JAVADOC />
         <SOURCES>
-          <root url="file://$MODULE_DIR$/../../../../../Huawei/SDK-2.2.0.3-mac/js/2.2.0.3/api/common" />
+          <root url="file://$MODULE_DIR$/../../../../../sdk/js/2.2.0.3/api/common" />
         </SOURCES>
       </library>
     </orderEntry>
