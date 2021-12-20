@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="divAli">
+        <input type="button" class="btn5" onclick="nxtimgl()" value="<"/>
+        <image class="img" src="{{displayimg}}" ></image>
+        <input type="button" class="btn5" onclick="nxtimgr()" value=">"/>
+    </div>
+    <div class="base" >
+        <image class="dot_img" src="{{dot1}}"></image>
+        <image class="dot_img" src="{{dot2}}"></image>
+        <image class="dot_img" src="{{dot3}}"></image>
+        <image class="dot_img" src="{{dot4}}"></image>
+        <image class="dot_img" src="{{dot5}}"></image>
+    </div>
+</div>

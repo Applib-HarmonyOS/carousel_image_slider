@@ -1,0 +1,7 @@
+<element name="ds_corousel" src="../../../../../../node_modules/ds_carousel_slider/lib/ds_comp/ds_comp.hml"></element>
+
+<div class="container">
+    <text class="title1">{{ title1 }}</text>
+    <text class="title2">{{ title2 }}</text>
+    <ds_corousel></ds_corousel>
+</div>
