@@ -2,6 +2,6 @@
 
 <div class="container">
     <text class="title1">{{ title1 }}</text>
-<!--    <text class="title2">{{ title2 }}</text>-->
+    <text class="title2">{{ title2 }}</text>
     <ds_corousel></ds_corousel>
 </div>
