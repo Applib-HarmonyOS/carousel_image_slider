@@ -25,9 +25,16 @@ In your Main .hml file import the following
 * Input of online Image Url is recomended
 
 <!--  -->
-<h2 align=left>💻Sample Video💻</h2>
+<h2 align=center>💻Sample Video💻</h2>
+
+<video  src="https://user-images.githubusercontent.com/54733680/146840625-1738bb2b-aa2a-4e90-ad90-89f411050864.mp4">
 
 
-  <video  src="https://user-images.githubusercontent.com/54733680/146835091-88f47c2b-371e-487b-9b05-eb5c1c1fc0fb.mp4">
+
+
+
+
+
+
 
 
