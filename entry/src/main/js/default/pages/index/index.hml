@@ -1,0 +1,17 @@
+<element name="ds_corousel" src="../../../../../../node_modules/ds_carousel_slider/lib/ds_comp/ds_comp.hml"></element>
+
+<div class="container">
+    <text class="title1">{{ title1 }}</text>
+    <text class="title2">{{ title2 }}</text>
+    <ds_corousel image1="https://raw.githubusercontent.com/sahilchutani/Images/main/ls01.jpg"
+                 image2="https://raw.githubusercontent.com/sahilchutani/Images/main/ls02.jpg"
+                 image3="https://raw.githubusercontent.com/sahilchutani/Images/main/ls03.jpg"
+                 image4="https://raw.githubusercontent.com/sahilchutani/Images/main/ls04.jpg"
+                 image5="https://raw.githubusercontent.com/sahilchutani/Images/main/ls05.jpg"
+                 dot1="https://raw.githubusercontent.com/sahilchutani/Images/main/red_dot.png"
+                 dot2="https://raw.githubusercontent.com/sahilchutani/Images/main/black_dot.png"
+                 dot3="https://raw.githubusercontent.com/sahilchutani/Images/main/black_dot.png"
+                 dot4="https://raw.githubusercontent.com/sahilchutani/Images/main/black_dot.png"
+                 dot5="https://raw.githubusercontent.com/sahilchutani/Images/main/black_dot.png">
+    </ds_corousel>
+</div>
