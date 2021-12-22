@@ -11,14 +11,14 @@
 In your Main .hml file import the following 
 <!--  -->
 
-`<element name="ds_corousel" src="../../../../../../node_modules/ds_carousel_slider/lib/ds_comp/ds_comp.hml"></element>`
+`<element name="ds_carousel_slider" src="../../../../../../node_modules/ds_carousel_slider/lib/ds_comp/ds_comp.hml"></element>`
 
 
 <!--  -->
 <h2 align=center>🛠 Usage 🛠</h2>
 <!--  -->
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/54733680/147123370-d2bcca23-77f7-4024-9ab4-80dfd7623a49.png">
+  <img src="https://user-images.githubusercontent.com/54733680/147123945-8aa005c7-e495-4499-82be-7f705ab55cb0.png">
 </p>
 <table>
   <tr>
