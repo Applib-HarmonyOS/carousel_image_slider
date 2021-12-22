@@ -89,7 +89,9 @@ In your Main .hml file import the following
   <br>
   Licensed under the <a href="https://github.com/sahilchutani/carousel_image_slider/blob/main/LICENSE">APACHE LICENSE 2.0</a>
 </p>
-
+<p align="center">
+  [a relative link](LICENSE)
+</p>
 
 
 
