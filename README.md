@@ -18,7 +18,7 @@ In your Main .hml file import the following
 <h2 align=center>🛠 Usage 🛠</h2>
 <!--  -->
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/54733680/147119456-c962c446-1698-4677-b570-d5452a54e902.png">
+  <img src="https://user-images.githubusercontent.com/54733680/147123252-14c5cca9-754b-4ad2-bc54-865e187cf94e.png">
 </p>
 <table>
   <tr>
