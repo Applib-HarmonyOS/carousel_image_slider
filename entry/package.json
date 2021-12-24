@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "ds_carousel_slider": "file:../ds_carousel_slider"
+  }
+}

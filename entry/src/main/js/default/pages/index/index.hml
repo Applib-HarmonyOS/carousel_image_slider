@@ -1,0 +1,17 @@
+<element name="ds_carousel_slider" src="../../../../../../node_modules/ds_carousel_slider/lib/ds_comp/ds_comp.hml"></element>
+
+<div class="container">
+    <text class="title1">{{ title1 }}</text>
+    <text class="title2">{{ title2 }}</text>
+    <ds_carousel_slider image1="common/images/ls01.jpg"
+                        image2="common/images/ls02.jpg"
+                        image3="common/images/ls03.jpg"
+                        image4="common/images/ls04.jpg"
+                        image5="common/images/ls05.jpg"
+                        dot1="common/images/red_dot.png"
+                        dot2="common/images/black_dot.png"
+                        dot3="common/images/black_dot.png"
+                        dot4="common/images/black_dot.png"
+                        dot5="common/images/black_dot.png">
+    </ds_carousel_slider>
+</div>
